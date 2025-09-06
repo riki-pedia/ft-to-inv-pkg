@@ -3,7 +3,7 @@
     "name": "Example Plugin",
     "desc": "Does example stuff",
     "version": "1.0.0",
-    "url": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv/refs/heads/master/plugins/example.js",
+    "url": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example.js",
     "sha256": "6cd36836950b7d2449b78898114129dbe787f4345ff187bda93a241313fa6a5e"
   }
 }
