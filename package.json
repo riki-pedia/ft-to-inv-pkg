@@ -1,1 +1,20 @@
-{}
+{
+  "name": "ft-to-inv-pkg",
+  "version": "1.0.0",
+  "description": "package repo for ft-to-inv's plugin sys",
+  "main": "entrypoint.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node entrypoint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riki-pedia/ft-to-inv-pkg.git"
+  },
+  "author": "riki-pedia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riki-pedia/ft-to-inv-pkg/issues"
+  },
+  "homepage": "https://github.com/riki-pedia/ft-to-inv-pkg#readme"
+}

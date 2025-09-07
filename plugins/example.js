@@ -18,9 +18,13 @@
       beforeSync,
       duringSync,
       afterSync,
-
+      onError,
+      cronWait
     duringMain triggers in the middle of bootstrap.
     duringSync triggers right after diffs are calculated.
+
+    cronWait triggers while waiting for the next cron job.
+    During a cron job, main() will be ran, and all hooks will be executed in order.
 
     please add your plugin name to any console output, see below
     if you need more data i'd be happy to help, just open an issue on the repo
@@ -69,4 +73,7 @@ export async function afterSync({ data }) {
 export async function onError({ error }) {
   // triggers on any fatal error, ignores warnings
   console.error("❌ [example-plugin] Error occurred:", error);
+}
+export async function cronWait({ cron }) {
+  console.log("🔧 [example-plugin] cronWait called", { cron });
 }
