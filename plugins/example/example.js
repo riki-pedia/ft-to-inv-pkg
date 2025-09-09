@@ -1,4 +1,6 @@
 // example plugin for the ft-to-inv tool
+// shows how plugins work
+// at least 50% comments at this point
 /* 
    here's some expected usage:
     register a plugin with a name, description, and version
@@ -33,6 +35,19 @@
 // ==== please import from @riki-pedia/ft-to-inv/src/[module].js ====
 //                 or just rikipedia on npmjs, @riki-pedia on github pkgs
 // this isn't in the package yet, which is why we import directly
+/*
+ for security reasons, there is a strict 'template' to follow for plugins
+ here's most of the rules:
+  - every plugin must have a plugin.json file
+    for example if your plugin is findable in the registry by "my-plugin", you'd need a my-plugin.json file, making sure to match the name of the dir.
+    the script must also be the same name as the plugin and plugin.json file.
+    you can reference plugins/example for more info
+    does this sound complicated? just name all your files the same name 
+    again see example dir where this file is
+  - I will maintain a marketplace.json file, this is the registry of all plugins, used for the marketplace
+    if you want to be in the registry, please open an issue or submit a PR here:
+    https://github.com/riki-pedia/ft-to-inv-pkg
+*/
 import { log } from '../src/logs.js'
 export function register() {
   return {
