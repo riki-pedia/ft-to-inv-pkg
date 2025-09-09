@@ -3,8 +3,8 @@
     "name": "Example Plugin",
     "desc": "Does example stuff",
     "version": "1.0.0",
-    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example.js",
-    "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example.json",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.js",
+    "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.json",
     "scriptSha": "f6e1910031f9e443bc6f045047817017186529d64636b205f61cfd2773caf15b",
     "jsonSha": "b1b1bcf37aa6aadc24cf29066638f98304b4e1a67817601da48382d8c4f55bb4"
   }
