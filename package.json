@@ -5,7 +5,8 @@
   "main": "entrypoint.js",
   "devDependencies": {},
   "scripts": {
-    "test": "node entrypoint.js"
+    "test": "node entrypoint.js",
+    "sha":"node updateSHA.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/riki-pedia/ft-to-inv-pkg/issues"
   },
-  "homepage": "https://github.com/riki-pedia/ft-to-inv-pkg#readme"
+  "homepage": "https://github.com/riki-pedia/ft-to-inv-pkg#readme",
+  "type": "module"   
 }
