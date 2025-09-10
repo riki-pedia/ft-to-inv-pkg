@@ -34,7 +34,7 @@ export async function duringSync({ data }) {
   md += `Generated: ${new Date().toISOString()}\n\n`;
   // History
   md += `## ▶️ New History (${newHistory.length})\n`;
-  if (newHistory.length && getVideoNameAndAuthor) {
+  if (newHistory.length) {
     for (const v of newHistory) {
       try {
         const { author, title } = await getVideoNameAndAuthor(v, instance, token);
