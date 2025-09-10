@@ -14,7 +14,7 @@
     "version": "1.0.0",
     "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.js",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json",
-    "scriptSha": "b9de50e568e26027a880caee548cb7f7028b37c3656b4374e8608361d874f9ba",
+    "scriptSha": "0a19c1df6f39be059bd6c8c31a17deed683b8919b9a1be02d25d65b1077736f5",
     "jsonSha": "549e9bc081365542bd26c2dc2c2f074d7733f930f8e94f14c146a5b0a269d0d3"
   }
 }
