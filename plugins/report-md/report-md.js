@@ -26,65 +26,54 @@ export async function afterMain(config) {
 }
 // Diff-based report
 export async function duringSync({ data }) {
-  const { newHistory = [], newSubs = [], newPlaylists = [] } = data;
-  const config = conf;
-  const instance = config.instance;
-  const token = config.token;
+  const { history = [], subs = [], playlists = [] } = data;
+  const instance = conf.conf.instance;
+  console.log(instance, conf);
   let md = `# 📊 ft-to-inv Sync Diff Report\n\n`;
   md += `Generated: ${new Date().toISOString()}\n\n`;
   // History
-  md += `## ▶️ New History (${newHistory.length})\n`;
-  if (newHistory.length) {
-    for (const v of newHistory) {
+  md += `## ▶️ New History (${history.length})\n`;
+  if (history.length) {
+    for (const videoId of history) {
       try {
-        const { author, title } = await getVideoNameAndAuthor(v, instance, token);
+        const { author, title } = await getVideoNameAndAuthor(videoId, instance);
         const prettyTitle = title || "Unknown Title";
         const prettyAuthor = author || "Unknown Author";
-        md += `- [${prettyTitle}](https://youtube.com/watch?v=${v.videoId}) by ${prettyAuthor}\n`;
+        md += `- [${prettyTitle}](https://youtube.com/watch?v=${videoId}) by ${prettyAuthor}\n`;
       } catch {
-        md += `- ${v.videoId} (failed to resolve)\n`;
+        md += `- ${videoId} (failed to resolve)\n`;
       }
-    }
-    if (newHistory.length > 20) {
-      md += `- …and ${newHistory.length - 20} more\n`;
     }
   } else {
     md += `- No new history this run\n`;
   }
-  md += `\n`;
   // Subs
-  md += `## 📺 New Subscriptions (${newSubs.length})\n`;
-  if (newSubs.length && getChannelName) {
-    for (const sub of newSubs.slice(0, 20)) {
+  md += `\n## 📺 New Subscriptions (${subs.length})\n`;
+  if (subs.length) {
+    for (const subId of subs) {
       try {
-        const name = await getChannelName(sub, instance);
-        md += `- ${name} (${sub})\n`;
+        const name = await getChannelName(subId, instance);
+        md += `- ${name} (${subId})\n`;
       } catch {
-        md += `- ${sub} (failed to resolve)\n`;
+        md += `- ${subId} (failed to resolve)\n`;
       }
-    }
-    if (newSubs.length > 20) {
-      md += `- …and ${newSubs.length - 20} more\n`;
     }
   } else {
     md += `- No new subscriptions this run\n`;
   }
-  md += `\n`;
   // Playlists
-  md += `## 📂 New Playlists (${newPlaylists.length})\n`;
-  if (newPlaylists.length) {
-    newPlaylists.slice(0, 20).forEach(pl => {
+  md += `\n## 📂 New Playlists (${playlists.length})\n`;
+  if (playlists.length) {
+    playlists.forEach(pl => {
       md += `- ${pl.title || pl.playlistId}\n`;
     });
-    if (newPlaylists.length > 20) {
-      md += `- …and ${newPlaylists.length - 20} more\n`;
-    }
   } else {
     md += `- No new playlists this run\n`;
   }
-  // write to file (same helper as before)
   const fileName = `sync-diff-${new Date().toISOString().replace(/[:.]/g, "-")}.md`;
-  writeReport(fileName, md);
+  if (history.length !== 0 && subs.length !== 0 && playlists.length !== 0) {
+    writeReport(fileName, md);
+  }
 }
 
 
