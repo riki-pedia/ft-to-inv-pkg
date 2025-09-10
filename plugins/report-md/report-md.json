@@ -1,6 +1,6 @@
 {
     "name": "report-md",
     "version": "1.0.0",
-    "description": "Makes a markdown report based off of the results of the sync",
+    "description": "Generates Markdown reports of ft-to-inv sync (diff + final state + errors)",
     "author": "riki-pedia"
 }
