@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export async function register() {
+export function register() {
   return {
     name: "report-md",
     version: "1.0.0",
