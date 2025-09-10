@@ -59,6 +59,8 @@ export function register() {
     hooks: ["beforeMain", "beforeSync", "afterSync", "duringSync", 'afterMain'] // optional, for clarity
   };
 }
+// ==== WARNING: THIS OUTPUTS SENSITIVE DATA LIKE TOKENS ====
+// ==== USE IN TESTING OR DEVELOPMENT ONLY ====
 
 export async function beforeMain({ overrides }) {
   console.log("🔧 [example-plugin] beforeMain called", overrides);
