@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.js",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.json",
-    "scriptSha": "ace72c677f52d5a8c88ef3f712269d370a69b3259ea30e3dfd8cc5bc797c148a",
+    "scriptSha": "725199f566960a4b5437d7cc29b35d209c35f5f700d2867fd6a1b1012ffd542e",
     "jsonSha": "b1b1bcf37aa6aadc24cf29066638f98304b4e1a67817601da48382d8c4f55bb4"
   }
 }
