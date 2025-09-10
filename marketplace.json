@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.js",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.json",
-    "scriptSha": "725199f566960a4b5437d7cc29b35d209c35f5f700d2867fd6a1b1012ffd542e",
+    "scriptSha": "f62f1a1cac88a301a1fe57c8228f4a89b97495bcda8a5e35cfab541ca9ccbbe5",
     "jsonSha": "b1b1bcf37aa6aadc24cf29066638f98304b4e1a67817601da48382d8c4f55bb4"
   },
   "report-md": {
@@ -14,7 +14,7 @@
     "version": "1.0.0",
     "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.js",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json",
-    "scriptSha": "faac621168f85ae812d84c5978649298218099253b0144d7a956e1d08099bd1b",
+    "scriptSha": "3e5efc1632b0305bf5b81c0db7e9441a98aef64de3b40801f5c1c0662007bfff",
     "jsonSha": "549e9bc081365542bd26c2dc2c2f074d7733f930f8e94f14c146a5b0a269d0d3"
   }
 }
