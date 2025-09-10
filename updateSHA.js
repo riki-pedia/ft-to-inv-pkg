@@ -40,6 +40,7 @@ export async function downloadAndVerify(url, expectedSha, dest) {
 
 async function computeSha(url) {
   // Passing `null` skips the verification check
+  // this writes to /dev/null to signify that there shouldnt be a path, and besides the write bit doesn't even work
   await downloadAndVerify(url, null, "/dev/null");
 }
 
