@@ -45,4 +45,4 @@ async function computeSha(url) {
 }
 
 // Example: recompute SHA for example.js
-computeSha("https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.js");
+computeSha("https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json");

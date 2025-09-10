@@ -7,5 +7,14 @@
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.json",
     "scriptSha": "725199f566960a4b5437d7cc29b35d209c35f5f700d2867fd6a1b1012ffd542e",
     "jsonSha": "b1b1bcf37aa6aadc24cf29066638f98304b4e1a67817601da48382d8c4f55bb4"
+  },
+  "report-md": {
+    "name": "Report MD",
+    "desc": "Generates Markdown reports of ft-to-inv sync (diff + final state + errors)",
+    "version": "1.0.0",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.js",
+    "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json",
+    "scriptSha": "b9de50e568e26027a880caee548cb7f7028b37c3656b4374e8608361d874f9ba",
+    "jsonSha": "f0ddbd45771b7ce41e16d5a0a98fa53ff3775a4f2966fce725c777499411fbbd"
   }
 }
