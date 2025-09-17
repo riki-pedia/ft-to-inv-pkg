@@ -1,0 +1,6 @@
+{
+    "name": "notify",
+    "version": "1.0.0",
+    "description": "Notifies user of ft-to-inv sync results with desktop notifications",
+    "author": "riki-pedia"  
+}
