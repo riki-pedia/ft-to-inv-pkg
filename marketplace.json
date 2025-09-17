@@ -16,5 +16,14 @@
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json",
     "scriptSha": "3e5efc1632b0305bf5b81c0db7e9441a98aef64de3b40801f5c1c0662007bfff",
     "jsonSha": "549e9bc081365542bd26c2dc2c2f074d7733f930f8e94f14c146a5b0a269d0d3"
+  },
+  "desktop-notify": {
+    "name": "Notify",
+    "desc": "Notifies user of ft-to-inv sync results with desktop notifications",
+    "version": "1.0.0",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/desktop-notify/desktop-notify.js",
+    "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/desktop-notify/desktop-notify.json",
+    "scriptSha": "b895b146cd1bce226bcfd10c78e647c74f9ab27fca7f649264ac3dcc10890873",
+    "jsonSha": "44152e56666f6476f06bfc4c548ca68d5bb2c5f582e69fd1ad8b180baa39d521"
   }
 }
