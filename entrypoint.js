@@ -1,2 +1,2 @@
-console.log('dont run from cli')
-process.exit(0)
+const msg = "you ran this from the cli bud what did you think would happen"
+throw new Error(msg)
