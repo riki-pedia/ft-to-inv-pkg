@@ -12,7 +12,7 @@
     "name": "Report MD",
     "desc": "Generates Markdown reports of ft-to-inv sync (diff + final state + errors)",
     "version": "1.0.0",
-    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.js",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.mjs",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json",
     "scriptSha": "bfd012a5025688d7672a81f7b1cb76d5029f5566d20081e2947d0fbc19e78aa3",
     "jsonSha": "549e9bc081365542bd26c2dc2c2f074d7733f930f8e94f14c146a5b0a269d0d3"
