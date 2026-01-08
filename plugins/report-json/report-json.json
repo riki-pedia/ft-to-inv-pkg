@@ -1,0 +1,6 @@
+{
+    "name": "report-json",
+    "version": "1.0.0",
+    "description": "A plugin to generate JSON reports from the sync results of ft-to-inv",
+    "main": "report-json.js"
+}
