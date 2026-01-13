@@ -3,9 +3,9 @@
     "name": "Example Plugin",
     "desc": "Does example stuff",
     "version": "1.0.0",
-    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.js",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.mjs",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/example/example.json",
-    "scriptSha": "f62f1a1cac88a301a1fe57c8228f4a89b97495bcda8a5e35cfab541ca9ccbbe5",
+    "scriptSha": "048b198396270dd93ac651ab4fd013ba86516be64e7a75eaba4a0d243ee8a52e",
     "jsonSha": "b1b1bcf37aa6aadc24cf29066638f98304b4e1a67817601da48382d8c4f55bb4"
   },
   "report-md": {
@@ -14,16 +14,25 @@
     "version": "1.0.0",
     "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.mjs",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-md/report-md.json",
-    "scriptSha": "bfd012a5025688d7672a81f7b1cb76d5029f5566d20081e2947d0fbc19e78aa3",
+    "scriptSha": "685f80b9c931e2ea89856dc7f60d28087e5bfc08b2c6133214918a97049bc6f6",
     "jsonSha": "549e9bc081365542bd26c2dc2c2f074d7733f930f8e94f14c146a5b0a269d0d3"
   },
   "desktop-notify": {
     "name": "Notify",
     "desc": "Notifies user of ft-to-inv sync results with desktop notifications",
     "version": "1.0.0",
-    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/desktop-notify/desktop-notify.js",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/desktop-notify/desktop-notify.mjs",
     "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/desktop-notify/desktop-notify.json",
     "scriptSha": "b895b146cd1bce226bcfd10c78e647c74f9ab27fca7f649264ac3dcc10890873",
     "jsonSha": "44152e56666f6476f06bfc4c548ca68d5bb2c5f582e69fd1ad8b180baa39d521"
+  },
+  "report-json": {
+    "name": "Report JSON",
+    "desc": "Writes ft-to-inv sync results to a JSON file",
+    "version": "1.0.0",
+    "script": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-json/report-json.mjs",
+    "json": "https://raw.githubusercontent.com/riki-pedia/ft-to-inv-pkg/refs/heads/main/plugins/report-json/report-json.json",
+    "scriptSha": "da49693606e4593af52c769d21fe15a6b68775ae3945c2937f11c486e2c2fa06",
+    "jsonSha": "9ec7a95767e630228bb785568d22829f86a1f099840d3b60055a5fcf04af24c4"
   }
 }
