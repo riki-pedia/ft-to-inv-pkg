@@ -48,7 +48,10 @@
     if you want to be in the registry, please open an issue or submit a PR here:
     https://github.com/riki-pedia/ft-to-inv-pkg
 */
-import { log } from '../../src/logs.js'
+import { pluginLog } from 'ft-to-inv/src/logs.js'
+function log(message, options = {}) {
+  pluginLog(message, { plugin: 'example-plugin', ...options });
+}
 export function register() {
   return {
     name: "example-plugin",

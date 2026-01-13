@@ -2,6 +2,10 @@ import fs from 'fs'
 import path from 'path'
 let conf
 import { getChannelName, getVideoNameAndAuthor } from 'ft-to-inv/src/utils.js'
+import { pluginLog } from 'ft-to-inv/src/logs.js'
+function log(message, options = {}) {
+  pluginLog(message, { plugin: 'report-md', ...options });
+}
 export function register() {
   return {
     name: 'report-md',
@@ -18,7 +22,7 @@ function writeReport(fileName, content) {
   }
   const filePath = path.join(reportsDir, fileName)
   fs.writeFileSync(filePath, content, 'utf-8')
-  console.log(`📝 [report-md] Markdown report written to ${filePath}`)
+  log(`📝 [report-md] Markdown report written to ${filePath}`)
 }
 export async function afterMain(config) {
   conf = config
